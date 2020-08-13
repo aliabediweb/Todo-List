@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todo App - Vue.js Basics</title>
+	<link rel="stylesheet" href="todo_style.css">
+	
+</head>
+
+<body>
+	
+	<hr/>
+	
+	<main id="app">
+		
+		<h1>{{title}}</h1>
+		<h6>{{subtitle}}</h6>
+		
+		<form @submit.prevent="addTodo">
+			<label for="newTodo">ADD ITEM TO LIST</label>
+			<input v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
+			<button id="add_btn" type="submit" name="button">ADD</button>
+		</form>
+		
+		<ul>
+			<li v-for="todo in todos">
+				<span :class="{ done: todo.done }">{{todo.title}}</span>
+				<!--<input id="checkbox" type="checkbox" v-model="todo.done">-->
+				<button id="completed_btn" @click="completeTodo(todo)" type="button" name="button">DONE</button>
+				<button id="remove_btn" @click="removeTodo(todo)" type="button" name="button">DELETE</button>
+			</li>
+		</ul>
+		
+		<button id="all_complete_btn" @click="allDone" type="button" name="button">MARK ALL AS COMPLETE</button>
+		
+	</main>
+	
+	<hr/>
+			<p class="footer">Copyright © Ali Abedi [August 2020]</p>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+	
+</html>
+
+
+
+<!------------ Copyright © Ali Abedi [August 2020] ------------>
