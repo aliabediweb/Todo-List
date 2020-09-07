@@ -37,6 +37,7 @@ input {
 li {
 	text-align: left;
 	font-size: 15px;
+	margin-bottom: 8px;
 }
 
 #checkbox {
