@@ -21,7 +21,7 @@
 		
 		<form @submit.prevent="addTodo">
 			<label for="newTodo">ADD ITEM TO LIST</label>
-			<input v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
+			<input maxlength="30" v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
 			<button id="add_btn" type="submit" name="button">ADD</button>
 		</form>
 		

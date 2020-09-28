@@ -4,7 +4,7 @@
 body {
 	color: black;
 	background-color: lightgreen;
-	padding: 30px;
+	padding: 0px;
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	letter-spacing: 1px;
@@ -28,7 +28,7 @@ input {
 #add_btn, #add_btn:focus {
 	background-color: darkgreen;
 	color: white;
-	margin-top: 15px; 
+	margin-top: 10px; 
 	font-size: 20px;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -36,7 +36,7 @@ input {
 
 li {
 	text-align: left;
-	font-size: 15px;
+	font-size: 12px;
 	margin-bottom: 8px;
 }
 
@@ -59,7 +59,7 @@ li {
 	color: black;
 	font-size: 15px;
 	position: absolute;
-	right: 20%;
+	right: 12%;
 	border: 1px solid black;
 	border-radius: 5px;
 }
@@ -79,7 +79,7 @@ li {
 }
 
 hr {
-	border: 0.5px solid black;
+	border-top: 2px solid black;
 }
 
 .footer {
