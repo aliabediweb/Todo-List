@@ -21,7 +21,7 @@
 		
 		<form @submit.prevent="addTodo">
 			<label for="newTodo">ADD ITEM TO LIST</label>
-			<input maxlength="30" v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
+			<input maxlength="28" v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
 			<button id="add_btn" type="submit" name="button">ADD</button>
 		</form>
 		
@@ -29,8 +29,8 @@
 			<li v-for="todo in todos">
 				<span :class="{ done: todo.done }">{{todo.title}}</span>
 				<!--<input id="checkbox" type="checkbox" v-model="todo.done">-->
-				<button id="completed_btn" @click="completeTodo(todo)" type="button" name="button">DONE</button>
-				<button id="remove_btn" @click="removeTodo(todo)" type="button" name="button">X</button>
+				<button id="completed_btn" @click="completeTodo(todo)" type="button" name="button">&#x2714</button>
+				<button id="remove_btn" @click="removeTodo(todo)" type="button" name="button">&#x2716</button>
 			</li>
 		</ul>
 		
