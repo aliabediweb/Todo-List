@@ -5,9 +5,8 @@ const app = new Vue({
 	
 	data: {
 		title: 'TO-DO LIST',
-		subtitle: 'A SIMPLE APP CREATED USING VUE.JS',
 		newTodo: '',
-		todos: []
+		todos: [],
 	},
 	
 	methods: {
@@ -25,11 +24,6 @@ const app = new Vue({
 		completeTodo(todo) {
 			todo.done = true;
 		},
-		allDone() {
-			this.todos.forEach(todo => {
-				todo.done = true;
-			})
-		}
 	}
 	
 });

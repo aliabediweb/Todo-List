@@ -5,24 +5,20 @@
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Todo App - Vue.js Basics</title>
+	<title>To-Do List</title>
 	<link rel="stylesheet" href="todo_style.css">
 	
 </head>
 
 <body>
 	
-	<hr/>
-	
 	<main id="app">
 		
 		<h1>{{title}}</h1>
-		<h5>{{subtitle}}</h5>
 		
 		<form @submit.prevent="addTodo">
-			<label for="newTodo">ADD ITEM TO LIST</label>
 			<input maxlength="23" v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
-			<button id="add_btn" type="submit" name="button">ADD</button>
+			<button id="add_btn" type="submit" name="button">+</button>
 		</form>
 		
 		<ul>
@@ -34,12 +30,7 @@
 			</li>
 		</ul>
 		
-		<button id="all_complete_btn" @click="allDone" type="button" name="button">MARK ALL AS COMPLETE</button>
-		
 	</main>
-	
-	<hr/>
-			<p class="footer">Copyright © Ali Abedi [August 2020]</p>
 	
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
